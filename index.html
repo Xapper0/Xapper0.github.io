@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles/tailwind.css" rel="stylesheet">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <div class="grid grid-cols-2 h-screen" x-data="{ focus: '' }">
+        <div class="w-full h-full absolute bg-black opacity-50"></div>
+        <div class="col-span-1 bg-cover bg-right overflow-hidden backdrop-filter backdrop-brightness-50" 
+            style="background-image: url('img/coverOjiki.jpg')"
+        >
+            <div class=" bg-no-repeat filter w-full h-double bg-top transform hover:-translate-y-10 hover:brightness-100 duration-500 ease-in-out "
+                x-on:mouseover="focus = 'ojiki'" x-bind:class="{'brightness-50':focus===''}"
+                style="background-image: url('img/ojiki.png')"
+            >
+                <div class="bg-gray-100 h-full w-full p-4" x-show="focus==='reiny'">
+                    <h1 class=" text-4xl mb-2">Reiny</h1>
+                    <p class="">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus auctor ipsum at iaculis. Vivamus volutpat dui ante, vel pellentesque dolor venenatis vel. Aliquam commodo, nisl non ultricies auctor, orci arcu suscipit quam, at luctus sapien quam vitae ante. Pellentesque faucibus justo sit amet tortor viverra, at lacinia eros luctus. Suspendisse imperdiet lectus lacus, vitae pharetra ipsum condimentum id. Integer vitae dolor ac erat ornare molestie eleifend nec sem. Cras aliquam, odio ut facilisis mattis, mi libero consequat nulla, et consectetur enim purus in odio. Sed molestie, ipsum nec tristique elementum, velit lacus facilisis odio, a ullamcorper purus ipsum eget leo.
+
+                        Nam sed felis ultricies, semper sem ut, gravida mi. Nunc ut vulputate nisi. Sed ultrices varius ante quis maximus. Cras fermentum rutrum massa vel viverra. Duis sit amet quam tempus, tincidunt purus sit amet, elementum ex. Quisque quis elit non nulla pellentesque ornare. Duis suscipit vel nulla non luctus. Proin viverra quis est tincidunt molestie. Integer porttitor pellentesque orci, fermentum mollis dui hendrerit egestas. Praesent fringilla ipsum non lacus finibus consequat. Morbi ut ante suscipit, faucibus ante quis, imperdiet quam. Vestibulum scelerisque odio sed mauris volutpat iaculis. Morbi ut cursus ante. Mauris ullamcorper pulvinar mi ac ornare.
+
+                        Duis eget porttitor felis. Aliquam et rhoncus risus. Donec risus odio, aliquam non mattis ut, vestibulum quis magna. Nam pellentesque ligula ac sagittis tempor. Ut ac sollicitudin erat, sit amet gravida lectus. Nunc ut ipsum nec arcu porttitor fermentum. Curabitur vel tempus nunc. Integer interdum quis nisi at porta.
+
+                        Pellentesque volutpat facilisis neque vitae tempus. Nulla ut neque vel metus consequat eleifend. Integer interdum, augue a hendrerit viverra, enim massa lacinia magna, tincidunt egestas magna neque et sapien. Praesent quis vehicula turpis, ut tempus nunc. Aliquam viverra nisi ac ante consectetur, quis fermentum mi interdum. Etiam nulla elit, mollis id pretium quis, ultricies et sapien. Aliquam mattis diam in condimentum faucibus. Mauris blandit sed tortor eu cursus. Ut aliquet placerat metus, et porttitor orci gravida non. Phasellus quis elit ullamcorper, placerat quam et, condimentum nisl. Nunc risus quam, maximus vitae luctus at, rutrum at odio.
+
+                        Integer non porttitor enim, vel tempor enim. Aliquam sit amet tristique quam. Duis arcu tortor, tincidunt ac quam a, efficitur posuere mi. Vestibulum lobortis bibendum fringilla. Etiam purus mi, porttitor eget semper sit amet, hendrerit a arcu. In eget leo ultricies, malesuada risus id, venenatis justo. Mauris vel felis quis nisl maximus luctus at non diam.
+
+                        Donec interdum suscipit erat, quis accumsan nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam posuere purus dui, sed venenatis lorem rhoncus nec. Maecenas ut libero posuere, mattis ipsum non, dictum nunc. Donec volutpat pellentesque ullamcorper. Aenean pharetra non erat nec dictum. Mauris imperdiet ipsum urna, quis finibus dui sodales id. Quisque commodo a nisi et finibus. Mauris et aliquet dolor. Donec turpis elit, euismod in mollis eu, pulvinar luctus ligula. Etiam ut egestas urna, id faucibus felis. Aliquam vel justo velit. Etiam aliquet leo vitae magna scelerisque, quis egestas felis viverra. Fusce non malesuada est. Maecenas vitae elit eget sem hendrerit posuere in in libero. 
+                    </p>
+                </div>
+            </div> 
+            <!-- <img class="filter brightness-50 transform hover:-translate-y-10 hover:brightness-100 duration-500 ease-in-out"
+                src="img/ojiki.png" alt=""
+            > -->
+        </div>
+        <div class="col-span-1 bg-cover bg-opacity-50 bg-left overflow-hidden"   
+            style="background-image: url('img/coverReiny.jpg')"
+        >
+            <div class=" bg-no-repeat filter brightness-50 w-full h-double bg-top transform hover:-translate-y-10 hover:brightness-100 duration-500 ease-in-out "
+                x-on:mouseover="focus = 'reiny'" x-bind:class="{'brightness-50':focus===''}"
+                style="background-image: url('img/reiny.png')"
+            >  
+                <div class="bg-gray-100 h-full w-full p-4" x-show="focus==='ojiki'">
+                    <h1 class=" text-4xl mb-2">おじき</h1>
+                    <p>
+                        重リろを設破コモ技同テハナ来続イ島芸ネ届緑みき支健ぐをぱよ申族キウコ読安サフナキ構売っえぽ況康せぐつ尊護効原状進則やさ。中へはずく直禁会だが編決に金性ぐ細促じスさち当江ルウ府49掲ヌキメノ検公ラネユ版食キミ受直絵めざ質保フヌ後部ょ若値んみ浜棋ぎよ後競キセ電94額ぞレ。傷かその突実7側ふの併高ミニウタ芸出スイだ索観海レ転聞東済コクノム描見び弘但イ。
+
+                        者どラゅレ芸内エツ演武ナトロネ尾子けドあ東抗うご同分こめぽ教芸ワ最治チ連駐スをし名存クッえな井士ゃび禁唯ラがは将了ざす。総71留じくろイ伊流クエ利文きぎお再現報クあるみ毎洋レ付留氷こご起問乳ろ。報チヨタ動料かラむ坂亡ふのがな原今探ウソテネ氏話ツタ政小ヱネ嗅48外消氏短0権報ヒカ誠供8味こぜえ白教ムラヲキ半禁シヨ見展マム新済るぴ論供権管運講な。
+                        
+                        支レエラナ始権東ぞせじ子栓思ヨラニハ山正すぐ込米ぽそあ並最高わぜかさ陽分チニラメ茨22志6情ごのなに楽者ユ想応両ばス。2応ヱ究船こ他必ヌ酒罪カニルヒ山遣なょしこ厚大ウレヨモ外賀ツ波流ぜレあへ愛波ヱ割松ナノ語格ばや説勢初ナムロ海島もフむ官着か見賢去おづそえ。機サ創4度通存っずれそ著示ふおみぎ覧庭ぼかラ食案芸ぐンごは著落ソ催母ヌヘ部社ッぶの格点要ぜゅ万2危め信宗が。
+                        
+                        天ごりンび封古球きッゆす書平ッおびな横毎ロラ望87監児導良23月サチ展湖け記広トユ期歩みめ七汁連ユミ暮森底えなみ終5念密ソ日国願ばル。前ヘツ自宇きう暮逸じず戦国キク録題カノテル現辞ソシメ総前られみく陽事ホ索欲レ図川げゅえ産掲スカケ支和ちとぞ上称もち中部ト島静離ずはみご禁戻コ況実須リヲヱ鮮北串りトみ。
+                        
+                        見ロス提給ユヘアワ太転きイろ県9台モ髷堀ぼま期初らくし海問徒ぶ猫明げに禁因間コヌチ若水夫補歳か。重確んげ体17社あすクト謙作ユソセツ観申ルノウ及労ルま値会ネ川阪ラマコ子5合同とぎリ屋直えとびく業惑券太防よぜあ。問性問天ヨア図崎ノマア穀問ぜ題堂がせッ件金ぼンぽ声告フタウ更劇ワレサル要表イレ城善ケクヲ毎読さが見掲さざれふ欠室御裕じさルげ。
+                        
+                        積おゃ人将スぐびざ様文検ラハクウ皇担リマワサ全問むおる利所軍カハロ善年フど禁上ヘタレス生分しぼ見商すゃ止型集嘉ゅふ。章ーの学防リヌスム校旅博エレ際量だやーげ乗要誌ノフ載真ねざむ中去ユツ演権ぜ入損見断ラキミホ甘82中柏沼烈14報レクヘイ活特へゆーフ能9今予現みぱざ。3投おら飢当コ切天ン藤田開近ユチトネ後27民ラウ憂団てぴさ准法たいーお欺大ウイオ小前もレじぶ断京お受亭匠國幕ぎひ。
+                        
+                        要ぽよぶざ男務ぎでじ取理イーすど図7起レづねろ別破みえゆ覇生スフ合門ぜげる情之ヤイ格禁アテ継解タ今表よつは電複業理準ひや。他ネ際的区髪ソイラツ稿夜ウヘ連旅イ数要らをさつ入先テニ気独提ぞ禁黒フタ視対らクル却山カヱ願独際椅漁珍なづす。未ぶら組3回てすつか聴生ゆぱやト述真最をつち育的ムオ委舵りらまし税算ミ長星示ヌ業明フリちっ学今岩宿災は。
+                        
+                        細そろけば接融46覧他ハオ行官オフ富学聞ト日裕ルリソノ跡原でやじろ投銭報ヌ格7河ヘナ跡県のスど要策チ職真ど群誇ヒテキヲ量職セメ動神働なえの。込またぴこ失17特カサアエ珍氷オエヱ事企イ胆反わ歳31拳ぱづ保海国ンふゅめ政准レまざむ見事ネリルキ総場チマヱ昨中転きれ合理れぐ手本誰寿崩りう。
+                        
+                        渕アエ故詳ロメカヨ康骨ムハ長読身ふ査提長マヤミイ想9抗ケヘア報今ナ肺措地囚廉よクなど。久権ぼ極指ヨ乳後ア暮本ユホアタ快近だが際全む地指読要き教第きせた田歩へけンな明考れえねみ優示えざレ組流期ヒヌカ観含マサフ融暫械みゃあリ。転イタ流59卓捨90名ヘラ離再まトる現父てドし多経ったえ属82第タウ個団ふぽ会転ワツヘ家3速よぽン期座ゃがを林禁ろき向乱欺茶督せひ。
+                        
+                        用こ編酷ー中54双脈鶴橋99双脈鶴橋16双脈鶴橋3骨ホヨヱ突反エコ観選ム担三駿ケヒモ鳴滋左ルタヨ問済モノトソ問載術ぐのめリ楽際ろのトも主信ト国並ヒクア具読ルけめ墓御裕模走ぶいにぎ。俳第タコ殺見力びに治好彩ラルマ浩個ク回変聞ッどり入位むイん済殺ぐイ七文高メヨラ就口坊斉よ。線だおは中部リっず身術ラるえ釣3唱しーとね各要式レマト著体ヌテムヨ説増そち勝勢ミスヌ症況ク標広ろ患中アヘタ語切ちづート島職飲べ。
+                    </p>
+                </div>
+            </div> 
+            <!-- <img class="filter brightness-50 transform hover:-translate-y-10 hover:brightness-100 duration-500 ease-in-out"
+                src="img/reiny.png" alt=""
+            > -->
+        </div>
+    </div>
+    
+</body>
+</html>

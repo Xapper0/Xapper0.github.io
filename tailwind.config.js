@@ -1,14 +1,20 @@
 module.exports = {
   purge: [
-    './src/**/*.html',
-    './src/**/*.js',
+    // './src/**/*.html',
+    // './src/**/*.js',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        double:'200%'
+      },
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+      brightness: ['hover', 'focus'],
+    },
   },
   plugins: [],
 }
